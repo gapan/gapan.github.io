@@ -1,1 +1,0 @@
-# gapan.github.io
