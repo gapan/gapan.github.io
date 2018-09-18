@@ -1,0 +1,60 @@
+baseurl = "http://vlahavas.com" # Hostname (and path) to the root.
+title = "{ GeorgeVlahavas }" # Site title.
+theme = "coder" # Set the theme.
+languagecode = "en" # The site's language code used to generate RSS.
+defaultcontentlanguage = "en" # The default content language.
+
+paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true # Enable to turn relative URLs into absolute.
+
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+
+disqusShortname = "" # Enable or disable Disqus.
+
+[params] # theme parameters
+    author = "George Vlahavas" # Author's name.
+    info = "{ researcher(); software_engineer(); linux_wizard(); }" # Author's job title or info.
+    description = "Personal website and blog for George Vlahavas" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
+    #avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+
+    #footercontent = "" # Add footer content
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = false
+
+    # to switch bewteen LTR and RTL layout
+    rtl = false
+
+    # Custom CSS
+    custom_css = []
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/gapan/"
+[[params.social]]
+    name = "Email"
+    icon = "fa fa-envelope fa-2x"
+    weight = 2
+    url = "mailto:george@vlahavas.com"
+[[params.social]]
+    name = "RSS"
+    icon = "fa fa-rss-square fa-2x"
+    weight = 3
+    url = "index.xml"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
