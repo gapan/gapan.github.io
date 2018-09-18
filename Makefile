@@ -12,3 +12,6 @@ publish:
 	cd public
 	git add --all
 	git commit -m "Publishing to master branch"
+
+serve:
+	hugo serve --watch
