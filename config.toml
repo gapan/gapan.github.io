@@ -1,5 +1,5 @@
 baseurl = "http://vlahavas.com" # Hostname (and path) to the root.
-title = "{ GeorgeVlahavas }" # Site title.
+title = "{ George_Vlahavas }" # Site title.
 theme = "coder" # Set the theme.
 languagecode = "en" # The site's language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
