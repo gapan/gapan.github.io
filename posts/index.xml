@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on { George_Vlahavas }</title>
-    <link>http://vlahavas.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://vlahavas.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Hugo with Github Pages</title>
-      <link>http://vlahavas.com/posts/20180919-hugo_with_github_pages/</link>
+      <link>http://localhost:1313/posts/20180919-hugo_with_github_pages/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://vlahavas.com/posts/20180919-hugo_with_github_pages/</guid>
+      <guid>http://localhost:1313/posts/20180919-hugo_with_github_pages/</guid>
       <description>So, I decided to start using Hugo as the platform for my website/blog. I&amp;rsquo;ve looked into different options, including Jekyll and Hexo and in the end, Hugo is the one that made the most sense to me.
 I also wanted to use Github Pages with it, including using a custom domain and using HTTPS by default. Had I chosen Jekyll, integration with Github Pages would have been automatic. However, Github Pages do not directly support any other static website generator.</description>
     </item>
     
     <item>
       <title>The Linux Command Line Seminars @ GreekLUG</title>
-      <link>http://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</link>
+      <link>http://localhost:1313/posts/20130127-tlcl_greeklug_2012/</link>
       <pubDate>Sun, 27 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</guid>
+      <guid>http://localhost:1313/posts/20130127-tlcl_greeklug_2012/</guid>
       <description>This is a series of seminars I presented at GreekLUG, about the use of the Linux Command Line. It&amp;rsquo;s in Greek. Total length is almost 9 hours&amp;hellip;
  Youtube Playlist (in Greek)  </description>
     </item>
     
     <item>
       <title>Salix Presentation @ GreekLUG</title>
-      <link>http://vlahavas.com/posts/20120129-salix_greeklug/</link>
+      <link>http://localhost:1313/posts/20120129-salix_greeklug/</link>
       <pubDate>Sun, 29 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://vlahavas.com/posts/20120129-salix_greeklug/</guid>
+      <guid>http://localhost:1313/posts/20120129-salix_greeklug/</guid>
       <description>This is a presentation of Salix, the GNU/Linux distribution I am developing. The presentation was make in GreekLUG, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy one I must admit.
  Youtube Video (in Greek) Slides  </description>
     </item>
