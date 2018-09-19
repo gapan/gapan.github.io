@@ -23,8 +23,8 @@ disqusShortname = "" # Enable or disable Disqus.
     #footercontent = "" # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
-    hideCopyright = false
+    hideCredits = true
+    hideCopyright = true
 
     # to switch bewteen LTR and RTL layout
     rtl = false
