@@ -1,82 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="George Vlahavas">
-    <meta name="description" content="Personal website and blog for George Vlahavas">
-    <meta name="keywords" content="blog,developer,personal">
-
-    <base href="http://localhost:1313/">
-    <title>
-  Using Hugo with Github Pages · { George_Vlahavas }
-</title>
-
-    <link rel="canonical" href="http://localhost:1313/posts/20180919-hugo_with_github_pages/">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
-
-    
-      
-      
-      <link rel="stylesheet" href="/css/coder.css" media="screen">
-    
-
-    
-
-    
-
-    <link rel="icon" type="image/png" href="http://localhost:1313/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://localhost:1313/images/favicon-16x16.png" sizes="16x16">
-
-    
-
-    <meta name="generator" content="Hugo 0.47.1" />
-  </head>
-
-  <body class="">
-    <main class="wrapper">
-      <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="http://localhost:1313/">
-      { George_Vlahavas }
-    </a>
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Using Hugo with Github Pages</title>
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="/posts/">Blog</a>
-          </li>
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: green;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://vlahavas.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.48" />
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="/about/">About</a>
-          </li>
+
         
-      
-      
-    </ul>
-  </section>
-</nav>
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Using Hugo with Github Pages</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:george@vlahavas.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/gapan/"><i class="fa fa-github"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
 
 
-      <div class="content">
-        
-  <section class="container post">
-  <article>
-    <header>
-      <h1 class="title">Using Hugo with Github Pages</h1>
-      <h2 class="date">September 19, 2018</h2>
+<main>
 
-      
-    </header>
+    <div class="item">
 
-    <p>So, I decided to start using <a href="https://gohugo.io/">Hugo</a> as the platform
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/posts/20180919-hugo_with_github_pages/">Using Hugo with Github Pages</a></h4>
+    <h5>September 19, 2018</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>So, I decided to start using <a href="https://gohugo.io/">Hugo</a> as the platform
 for my website/blog. I&rsquo;ve looked into different options, including
 <a href="https://jekyllrb.com/">Jekyll</a> and <a href="http://hexo.io/">Hexo</a> and in the
 end, Hugo is the one that made the most sense to me.</p>
@@ -104,7 +167,8 @@ content in a <code>source</code> git branch and then publish the files that are
 generated by Hugo to the <code>master</code> branch.</p>
 
 <p>The directory structure for a Hugo project looks something like this:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">site
+
+<pre><code>site
 ├── archetypes
 ├── config.toml
 ├── content
@@ -112,7 +176,9 @@ generated by Hugo to the <code>master</code> branch.</p>
 ├── layouts
 ├── public  &lt;---- Generated files go here
 ├── static
-└── themes</pre></div>
+└── themes
+</code></pre>
+
 <p>Hugo puts the generated files inside the <code>public</code> directory.
 What I wanted to do was to have the entire <code>site</code> directory mapped to the
 <code>source</code> git branch, <em>except</em> the <code>public</code> directory, which should be mapped
@@ -122,13 +188,17 @@ to the <code>master</code> branch. Here&rsquo;s how I did it&hellip;</p>
 <code>README</code> file or anything else at this step, we&rsquo;ll do that later.</p>
 
 <p>Then, create a new Hugo site locally with:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new site newsite</pre></div>
+
+<pre><code>hugo new site newsite
+</code></pre>
+
 <p>Feel free to change the &ldquo;newsite&rdquo; name to anything you want.</p>
 
 <p>Then, move into that directory you just created, create an empty text
 file with <code>Makefile</code> as the filename and put the following contents in
 it:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">GITREPO = git@github.com:yournick/yourrepo.git
+
+<pre><code>GITREPO = git@github.com:yournick/yourrepo.git
 
 build:
         rm -rf public
@@ -142,7 +212,7 @@ build:
 publish: build
         cd public &amp;&amp; \
         git add --all &amp;&amp; \
-        git commit -m &#34;Publish on `date`&#34; &amp;&amp; \
+        git commit -m &quot;Publish on `date`&quot; &amp;&amp; \
         git push -u origin master
 
 serve:
@@ -152,23 +222,29 @@ init:
         touch README.md
         git init
         git add README.md 
-        git commit -m &#34;first commit&#34;
+        git commit -m &quot;first commit&quot;
         git remote add origin ${GITREPO}
         git push -u origin master
         git branch source
         git checkout source
         git rm README.md
         git add ./*
-        echo &#34;public&#34; &gt; .gitignore
+        echo &quot;public&quot; &gt; .gitignore
         git add .gitignore
-        git commit -m &#34;Add hugo files&#34;
-        git push -u origin source</pre></div>
+        git commit -m &quot;Add hugo files&quot;
+        git push -u origin source
+
+</code></pre>
+
 <p>Make sure your edit the <code>GITREPO</code> variable at the top of the file to
 match the address of the git repo you created on github.</p>
 
 <p>So, now we&rsquo;ll add the <code>Makefile</code> and all files that were generated by Hugo.
 Open a terminal in the same directory you just put the <code>Makefile</code> in and run:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">make init</pre></div>
+
+<pre><code>make init
+</code></pre>
+
 <p>That does all the work of setting up the repo with the structure that we
 want to have. It also adds an empty <code>README.md</code> file in the <code>master</code> branch.
 You can edit that to provide a description for your project.</p>
@@ -177,11 +253,17 @@ You can edit that to provide a description for your project.</p>
 set it up. I&rsquo;ll use the
 <a href="https://themes.gohugo.io/black-and-light/">Black &amp; Light</a> theme for this
 example:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git submodule add https://github.com/davidhampgonsalves/hugo-black-and-light-theme.git themes/black-and-light
-cp themes/black-and-light/exampleSite/config.toml ./</pre></div>
+
+<pre><code>git submodule add https://github.com/davidhampgonsalves/hugo-black-and-light-theme.git themes/black-and-light
+cp themes/black-and-light/exampleSite/config.toml ./
+</code></pre>
+
 <p>and edit the <code>config.toml</code> file with your details. You can then create
 some content:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new posts/my-first-post.md</pre></div>
+
+<pre><code>hugo new posts/my-first-post.md
+</code></pre>
+
 <p>And that&rsquo;s mostly it&hellip; You&rsquo;ll be working on your content in the
 <code>source</code> branch and publishing your website to the <code>master</code> branch.
 Don&rsquo;t forget to go into your project&rsquo;s <strong>Settings</strong> page in Github and
@@ -190,36 +272,40 @@ source.</p>
 
 <p>Updating the website with new content should be simple enough. To build the
 project, just run:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">make</pre></div>
+
+<pre><code>make
+</code></pre>
+
 <p>and to publish the changes to your site, run</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">make publish</pre></div>
+
+<pre><code>make publish
+</code></pre>
+
 <p>You may also run:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">make serve</pre></div>
+
+<pre><code>make serve
+</code></pre>
+
 <p>which is just a shortcut for <code>hugo serve --watch</code> for testing your
 changes locally.</p>
+</div>
 
-  </article>
-
-  <br/>
-
-  
-
-</section>
-
-
-      </div>
-
-      <footer class="footer">
-  <section class="container">
     
-     
-  </section>
-</footer>
-
-    </main>
+    
 
     
 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
 
 </html>
+
