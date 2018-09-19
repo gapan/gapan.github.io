@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{ George_Vlahavas }</title>
+    <link>http://vlahavas.com/</link>
+    <description>Recent content on { George_Vlahavas }</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://vlahavas.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Hugo with Github Pages</title>
+      <link>http://vlahavas.com/posts/20180919-hugo_with_github_pages/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://vlahavas.com/posts/20180919-hugo_with_github_pages/</guid>
+      <description>So, I decided to start using Hugo as the platform for my website/blog. I&amp;rsquo;ve looked into different options, including Jekyll and Hexo and in the end, Hugo is the one that made the most sense to me.
+I also wanted to use Github Pages with it, including using a custom domain and using HTTPS by default. Had I chosen Jekyll, integration with Github Pages would have been automatic. However, Github Pages do not directly support any other static website generator.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://vlahavas.com/about/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://vlahavas.com/about/</guid>
+      <description>Hi! I&amp;rsquo;m George Vlahavas. I am a computer scientist, currently working as a researcher in the Department of Informatics, Aristotle University of Thessaloniki. My current research interests are focused on blockchain technologies, but I have also been extensively involved with the areas of Data Science and Statistics, with an application in various areas such as Phonetics, Aquaculture, Food Science and Nutrition.
+I have taught several classes of Applied Statistics and Biostatistics at university level.</description>
+    </item>
+    
+    <item>
+      <title>The Linux Command Line Seminars @ GreekLUG</title>
+      <link>http://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</link>
+      <pubDate>Sun, 27 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</guid>
+      <description>This is a series of seminars I presented at GreekLUG, about the use of the Linux Command Line. It&amp;rsquo;s in Greek. Total length is almost 9 hours&amp;hellip;
+ Youtube Playlist (in Greek)  </description>
+    </item>
+    
+    <item>
+      <title>Salix Presentation @ GreekLUG</title>
+      <link>http://vlahavas.com/posts/20120129-salix_greeklug/</link>
+      <pubDate>Sun, 29 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://vlahavas.com/posts/20120129-salix_greeklug/</guid>
+      <description>This is a presentation of Salix, the GNU/Linux distribution I am developing. The presentation was make in GreekLUG, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy one I must admit.
+ Youtube Video (in Greek) Slides  </description>
+    </item>
+    
+  </channel>
+</rss>
