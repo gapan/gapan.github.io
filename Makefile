@@ -34,3 +34,5 @@ init:
 	git commit -m "Add hugo files"
 	git push -u origin source
 
+update-theme:
+	git submodule update --remote themes/coder
