@@ -6,10 +6,20 @@
     <description>Recent content on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 22:24:42 +0300</lastBuildDate>
     
 	<atom:link href="https://vlahavas.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simplified Payment Verification in Bitcoin Presentation</title>
+      <link>https://vlahavas.com/posts/20180924-bitcoin-spv/</link>
+      <pubDate>Mon, 24 Sep 2018 22:24:42 +0300</pubDate>
+      
+      <guid>https://vlahavas.com/posts/20180924-bitcoin-spv/</guid>
+      <description>This is a presentation I gave at the Bitcoin and Blockchain Tech Meetup at OK!Thess, in Thessaloniki, Greece, about Simplified Payment Verification in Bitcoin. Slides are in English.
+ Slides  </description>
+    </item>
     
     <item>
       <title>Using Hugo with Github Pages</title>
