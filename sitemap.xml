@@ -18,7 +18,37 @@
   </url>
   
   <url>
+    <loc>https://vlahavas.com/blog/example-of-an-article/</loc>
+    <lastmod>2015-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/presentations/presentations/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/blog/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/blog/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/blog/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</loc>
+    <lastmod>2013-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/presentations/tlcl-greeklug-2012/</loc>
     <lastmod>2013-01-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,8 +58,63 @@
   </url>
   
   <url>
+    <loc>https://vlahavas.com/presentations/salix-greeklug/</loc>
+    <lastmod>2012-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/blog/</loc>
+    <lastmod>2015-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://vlahavas.com/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/categories/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/home/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/license/</loc>
   </url>
   
   <url>
@@ -39,7 +124,32 @@
   </url>
   
   <url>
+    <loc>https://vlahavas.com/presentations/</loc>
+    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/presentations/</loc>
+    <lastmod>2013-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://vlahavas.com/tags/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/templates/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/tags/themes/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
