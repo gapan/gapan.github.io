@@ -163,3 +163,10 @@ make serve
 which is just a shortcut for `hugo serve --watch` for testing your
 changes locally.
 
+In order to clone the repo on another PC, go straight to the `source`
+branch and also clone the theme at the same time, you can run:
+
+```
+git clone -b source --recurse-submodules git@github.com:yournick/yourrepo.git
+```
+
