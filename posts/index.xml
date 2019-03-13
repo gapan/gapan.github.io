@@ -6,10 +6,24 @@
     <description>Recent content in Posts on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Sep 2018 22:24:42 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 01:35:24 +0200</lastBuildDate>
     
 	<atom:link href="https://vlahavas.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The ABC&#39;s of Unix</title>
+      <link>https://vlahavas.com/posts/20190314-the_abcs_of_unix/</link>
+      <pubDate>Thu, 14 Mar 2019 01:35:24 +0200</pubDate>
+      
+      <guid>https://vlahavas.com/posts/20190314-the_abcs_of_unix/</guid>
+      <description>I have fortune enabled on most of my systems, so whenever I log in, I get a quotation. Today, I got this one. Suffice to say, I found it really funny!
+ A is for awk, which runs like a snail, and
+B is for biff, which reads all your mail.
+C is for cc, as hackers recall, while
+D is for dd, the command that does all.
+E is for emacs, which rebinds your keys, and</description>
+    </item>
     
     <item>
       <title>Simplified Payment Verification in Bitcoin Presentation</title>

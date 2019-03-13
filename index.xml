@@ -6,10 +6,24 @@
     <description>Recent content on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Sep 2018 22:24:42 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 01:35:24 +0200</lastBuildDate>
     
 	<atom:link href="https://vlahavas.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The ABC&#39;s of Unix</title>
+      <link>https://vlahavas.com/posts/20190314-the_abcs_of_unix/</link>
+      <pubDate>Thu, 14 Mar 2019 01:35:24 +0200</pubDate>
+      
+      <guid>https://vlahavas.com/posts/20190314-the_abcs_of_unix/</guid>
+      <description>I have fortune enabled on most of my systems, so whenever I log in, I get a quotation. Today, I got this one. Suffice to say, I found it really funny!
+ A is for awk, which runs like a snail, and
+B is for biff, which reads all your mail.
+C is for cc, as hackers recall, while
+D is for dd, the command that does all.
+E is for emacs, which rebinds your keys, and</description>
+    </item>
     
     <item>
       <title>Simplified Payment Verification in Bitcoin Presentation</title>
@@ -42,74 +56,12 @@ I have taught several classes of Applied Statistics and Biostatistics at univers
     </item>
     
     <item>
-      <title>Example article</title>
-      <link>https://vlahavas.com/blog/example-of-an-article/</link>
-      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/example-of-an-article/</guid>
-      <description>Text This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium at ipsum eu pharetra. Proin ac ante et leo ultrices bibendum. Vivamus id ipsum fermentum, aliquam nunc mollis, tempus sapien. Praesent scelerisque cursus eros vitae pretium. Etiam sit amet ligula in leo euismod malesuada. Proin eleifend pulvinar ipsum, eu lobortis ante pharetra eu. Vivamus sem elit, venenatis eget ornare nec, ullamcorper non tellus. Duis quis massa finibus, euismod erat quis, fermentum nunc.</description>
-    </item>
-    
-    <item>
-      <title>Presentations</title>
-      <link>https://vlahavas.com/presentations/presentations/</link>
-      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
-      
-      <guid>https://vlahavas.com/presentations/presentations/</guid>
-      <description>This is a list of presentations and talks I&amp;rsquo;ve given in workshops and seminars. Most of the videos are here because somebody else decided it was a good idea to record them! So, thank you!</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://vlahavas.com/blog/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://vlahavas.com/blog/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://vlahavas.com/blog/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
       <title>The Linux Command Line Seminars @ GreekLUG</title>
       <link>https://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</link>
       <pubDate>Sun, 27 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</guid>
       <description>This is a series of seminars I presented at GreekLUG, about the use of the Linux Command Line. It&amp;rsquo;s in Greek. Total length is almost 9 hours&amp;hellip;
- Youtube Playlist (in Greek)  </description>
-    </item>
-    
-    <item>
-      <title>The Linux Command Line seminars @ GreekLUG (in Greek)</title>
-      <link>https://vlahavas.com/presentations/tlcl-greeklug-2012/</link>
-      <pubDate>Sun, 27 Jan 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/presentations/tlcl-greeklug-2012/</guid>
-      <description>This is a series of seminars I presented at GreekLUG, about the use of the Linux Command Line.
  Youtube Playlist (in Greek)  </description>
     </item>
     
@@ -121,38 +73,6 @@ Follow the following steps:
       <guid>https://vlahavas.com/posts/20120129-salix_greeklug/</guid>
       <description>This is a presentation of Salix, the GNU/Linux distribution I am developing. The presentation was make in GreekLUG, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy one I must admit.
  Youtube Video (in Greek) Slides  </description>
-    </item>
-    
-    <item>
-      <title>Salix presentation @ GreekLUG (in Greek)</title>
-      <link>https://vlahavas.com/presentations/salix-greeklug/</link>
-      <pubDate>Sun, 29 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/presentations/salix-greeklug/</guid>
-      <description>This is a presentation of Salix, the GNU/Linux distribution I am developing. The presentation was make in GreekLUG, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy one I must admit.
- Youtube Video (in Greek) Slides  </description>
-    </item>
-    
-    <item>
-      <title>Home</title>
-      <link>https://vlahavas.com/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/home/</guid>
-      <description>This is the home page. It will display the blog section if there is one, and a text before.
-Hey ! Welcome to the Cocoa Enhanced theme. Here are some articles :</description>
-    </item>
-    
-    <item>
-      <title>License</title>
-      <link>https://vlahavas.com/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/license/</guid>
-      <description>You can use this page to put a license on the contents of your blog, like so:
- The MIT License (MIT)
-Copyright &amp;copy; 2015 Nishanth Shanmughamnishanth.gerrard@gmail.com
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
     </item>
     
   </channel>
