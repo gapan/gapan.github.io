@@ -1,5 +1,5 @@
 +++
-title = "Laptop problems"
+title = "Laptop Problems"
 date = "2019-05-03"
 +++
 
