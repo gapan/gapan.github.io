@@ -6,10 +6,20 @@
     <description>Recent content in Posts on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Mar 2019 01:35:24 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://vlahavas.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Laptop problems</title>
+      <link>https://vlahavas.com/posts/20190503-laptop-problems/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vlahavas.com/posts/20190503-laptop-problems/</guid>
+      <description>My sister has an HP laptop that she bought a few years ago. The exact model is the HP 14-r27n. It wasn&amp;rsquo;t a powerhouse when she bought it and it certainly isn&amp;rsquo;t now, but having installed Salix, in place of the Windows 8 that came with it, and which were almost never booted, it still gets the job done.
+So, she called me a few days ago and told me that something was wrong with it; certain apps wouldn&amp;rsquo;t launch.</description>
+    </item>
     
     <item>
       <title>The ABC&#39;s of Unix</title>

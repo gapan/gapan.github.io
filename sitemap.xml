@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vlahavas.com/posts/20190503-laptop-problems/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vlahavas.com/posts/20190314-the_abcs_of_unix/</loc>
     <lastmod>2019-03-14T01:35:24+02:00</lastmod>
   </url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>https://vlahavas.com/posts/</loc>
-    <lastmod>2019-03-14T01:35:24+02:00</lastmod>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,7 +55,7 @@
   
   <url>
     <loc>https://vlahavas.com/</loc>
-    <lastmod>2019-03-14T01:35:24+02:00</lastmod>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
