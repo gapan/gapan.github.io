@@ -122,7 +122,7 @@ The graphics card, as reported by `lspci` is this one:
         Kernel modules: i915
 ```
 
-I thought I'd try upgrading to the latest xorg intel drivers, so I
+I thought I'd try upgrading to the latest Xorg intel drivers, so I
 pulled the code from git, compiled and made a pretty package and
 installed it in place of the stock one. It didn't make a difference.
 
@@ -151,7 +151,7 @@ behaviour was the same for the software slider in MATE-power-manager.
 I had never seen anything like that before, and after a quick web search
 I came up with nothing useful. I wasn't sure how to deal with this.
 After a while I thought I would look up the available options for the
-kernel module that is used for the graphics card, i915 with
+kernel module that is used for the graphics card, i915, with
 `modinfo -p i915`. So, I got this:
 
 ```
