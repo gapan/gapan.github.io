@@ -192,7 +192,7 @@ apparently there weren&rsquo;t any problem there.</p>
         Capabilities: [b0] Vendor Specific Information: Len=07 &lt;?&gt;
         Kernel driver in use: i915
         Kernel modules: i915</pre></div>
-<p>I thought I&rsquo;d try upgrading to the latest xorg intel drivers, so I
+<p>I thought I&rsquo;d try upgrading to the latest Xorg intel drivers, so I
 pulled the code from git, compiled and made a pretty package and
 installed it in place of the stock one. It didn&rsquo;t make a difference.</p>
 
@@ -221,7 +221,7 @@ behaviour was the same for the software slider in MATE-power-manager.</p>
 <p>I had never seen anything like that before, and after a quick web search
 I came up with nothing useful. I wasn&rsquo;t sure how to deal with this.
 After a while I thought I would look up the available options for the
-kernel module that is used for the graphics card, i915 with
+kernel module that is used for the graphics card, i915, with
 <code>modinfo -p i915</code>. So, I got this:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">modeset:Use kernel modesetting [KMS] (0=disable, 1=on, -1=force vga console preference [default]) (int)
 panel_ignore_lid:Override lid status (0=autodetect, 1=autodetect disabled [default], -1=force lid closed, -2=force lid open) (int)
