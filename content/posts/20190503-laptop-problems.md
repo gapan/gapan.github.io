@@ -58,7 +58,7 @@ drive in place of the failing optical drive that it had, but I never got
 to actually doing it. The caddy looks exactly like this one (not my
 picture):
 
-![HDD caddy](/files/hdd-caddy.jpg)
+![HDD caddy](/images/hdd-caddy.jpg)
 
 So, in addition to the SSD drive, I thought I could also add a second
 hard drive for storage. And since I was at it, how about upgrading the
