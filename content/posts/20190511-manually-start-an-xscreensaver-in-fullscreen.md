@@ -68,7 +68,7 @@ sleep 1
 # make the window fullscreen
 wmctrl -r "Pacman: from the XScreenSaver" -b toggle,fullscreen
 ```
-made it executable and set added a key binding that launches it by pressing
+made it executable and added a key binding that launches it by pressing
 the `Win-X` key combination.
 
 And I can now start it fullscreen with a single hand! Of course you can
