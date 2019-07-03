@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vlahavas.com/posts/20190703-program-esp8266-with-arduino-nano/</loc>
+    <lastmod>2019-07-03T20:27:57+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vlahavas.com/posts/20190511-manually-start-an-xscreensaver-in-fullscreen/</loc>
     <lastmod>2019-05-11T20:25:31+03:00</lastmod>
   </url>
@@ -49,7 +54,7 @@
   
   <url>
     <loc>https://vlahavas.com/posts/</loc>
-    <lastmod>2019-05-11T20:25:31+03:00</lastmod>
+    <lastmod>2019-07-03T20:27:57+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,7 +65,7 @@
   
   <url>
     <loc>https://vlahavas.com/</loc>
-    <lastmod>2019-05-11T20:25:31+03:00</lastmod>
+    <lastmod>2019-07-03T20:27:57+03:00</lastmod>
     <priority>0</priority>
   </url>
   
