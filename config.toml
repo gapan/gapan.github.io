@@ -3,6 +3,7 @@ title = "{ George_Vlahavas }" # Site title.
 theme = "coder" # Set the theme.
 languagecode = "en" # The site's language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
+rssLimit = 20
 
 paginate = 20 # Default number of pages per page in pagination.
 canonifyurls = true # Enable to turn relative URLs into absolute.
