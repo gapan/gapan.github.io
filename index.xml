@@ -8,18 +8,9 @@
     <language>en</language>
     <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://vlahavas.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://vlahavas.com/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>About</title>
-      <link>https://vlahavas.com/about/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/about/</guid>
-      <description>Hi! I&amp;rsquo;m George Vlahavas. I am a computer scientist, currently working as a researcher in the Department of Informatics, Aristotle University of Thessaloniki. My current research interests are focused on blockchain technologies, but I have also been extensively involved with the areas of Data Science and Statistics, with an application in various subjects such as Phonetics, Aquaculture, Food Science and Nutrition.
-I have taught several classes of Applied Statistics and Biostatistics at university level.</description>
-    </item>
     
     <item>
       <title>How to Program an ESP8266 ESP-01 with an Arduino Nano</title>
@@ -27,10 +18,64 @@ I have taught several classes of Applied Statistics and Biostatistics at univers
       <pubDate>Wed, 03 Jul 2019 20:27:57 +0300</pubDate>
       
       <guid>https://vlahavas.com/posts/20190703-program-esp8266-with-arduino-nano/</guid>
-      <description>The ESP8266 ESP-01 board is a tiny little board with a microcontroller that also includes a wifi network interface. It is also very cheap, you can find one online for about 1€. If you have a project that needs wifi connectivity, but not too many pins, it&amp;rsquo;s perfect.
-Here is the pinout of the board:
-You should be careful that it needs a 3.3V power source to operate. Powering it with 5V will probably fry it.</description>
+      <description>&lt;p&gt;The ESP8266 ESP-01 board is a tiny little board with a microcontroller
+that also includes a wifi network interface. It is also very cheap, you
+can find one online for about 1€. If you have a project that needs wifi
+connectivity, but not too many pins, it&amp;rsquo;s perfect.&lt;/p&gt;
+
+&lt;p&gt;Here is the pinout of the board:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://vlahavas.com/images/ESP8266-Pinout.png&#34; alt=&#34;ESP8266 pinout&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You should be careful that it needs a 3.3V power source to operate.
+Powering it with 5V will probably fry it. Similarly, you should not send
+a 5V signal to the RX pin when programming it, or any other pin for that
+matter.&lt;/p&gt;
+
+&lt;p&gt;The easiest way to program it is probably using a dedicated USB
+programmer, that you can also find very cheap online, for less than 1€. But
+since I didn&amp;rsquo;t have one, I decided to program my ESP-01 using an Arduino Nano
+board as a USB interface to it.&lt;/p&gt;
+
+&lt;p&gt;In order to program the ESP-01, you need to connect the Nano and the
+ESP-01 according to the following picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://vlahavas.com/images/arduino_nano-esp01.png&#34; alt=&#34;Arduino Nano and ESP01 connections schematic&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that I have added a voltage divider to the connection that leads
+to the ESP-01 RX pin. That is because the Arduino outputs 5V from its
+own RX pin. I used a 1kΩ (first one, on the lower right) and a 1.8kΩ
+(second one, on the upper left) resistors, so that would bring the 5V
+output down to about 3.2V according to my calculations, which is close
+enough to the 3.3V that ESP8266 needs.&lt;/p&gt;
+
+&lt;p&gt;To program it using the Arduino IDE, choose &amp;ldquo;Generic ESP8266 module&amp;rdquo; as
+your board from the menu. Now, also connect the Nano&amp;rsquo;s RST pin to GND.
+This is important. Connect the Nano to your PC&amp;rsquo;s USB port. Here comes
+the hard part: hit the upload button. Once the two lines of white text
+that inform you that the sketch has been compiled show up, disconnect
+the RST pin from GND. The timing here is &lt;em&gt;very&lt;/em&gt; tricky and you need to
+be very patient. I get it right about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; times, which sucks. If it
+works, you should be able to see the progress in the Arduino IDE and
+also see the ESP-01&amp;rsquo;s led flash. If it doesn&amp;rsquo;t, you&amp;rsquo;ll get an error like
+the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;warning: espcomm_sync failed
+error: espcomm_open failed
+error: espcomm_upload_mem failed
+error: espcomm_upload_mem failed&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;in which case, you should connect the RST to GND again, and start over.
+Rinse and repeat until it works.&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re done programming the ESP-01, remove the GND connection from
+the GPIO0 pin. If you need to monitor the serial console, swap the TX
+and RX pins. Otherwise you can remove them completely too. Also remove
+the connection from CH_EN pin, you only need the VCC and GND pins
+connected for the ESP-01 to operate. That&amp;rsquo;s it, your ESP8266 should be
+working now and if you added code to connect it to your wifi network,
+you should be able to see it.&lt;/p&gt;
+</description>
     </item>
+    
     
     <item>
       <title>Manually Start an XScreenSaver in Fullscreen</title>
@@ -38,9 +83,72 @@ You should be careful that it needs a 3.3V power source to operate. Powering it 
       <pubDate>Sat, 11 May 2019 20:25:31 +0300</pubDate>
       
       <guid>https://vlahavas.com/posts/20190511-manually-start-an-xscreensaver-in-fullscreen/</guid>
-      <description>It turns out that my baby daughter is absolutely mesmerized by xscreensaver and by the many awesome screensavers it includes. Her favourite so far seems to be Pacman! Here it is in all its glory:
-So I needed to find a way to manually launch it fullscreen. I could do it by launching xscreensaver-demo from the menu or a terminal, then choosing the screensaver from the list and hitting the Preview button.</description>
+      <description>&lt;p&gt;It turns out that my baby daughter is absolutely mesmerized by
+&lt;a href=&#34;https://www.jwz.org/xscreensaver/&#34;&gt;xscreensaver&lt;/a&gt; and by the many
+awesome screensavers it includes. Her favourite so far seems to be
+Pacman! Here it is in all its glory:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://vlahavas.com/images/xscreensaver-pacman.png&#34; alt=&#34;XScreenSaver Pacman&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I needed to find a way to manually launch it fullscreen. I could do
+it by launching &lt;code&gt;xscreensaver-demo&lt;/code&gt; from the menu or a terminal, then
+choosing the screensaver from the list and hitting the &lt;em&gt;Preview&lt;/em&gt; button.
+But that&amp;rsquo;s too involved and I would preferably be able to do it as fast
+as possible with one hand, because I&amp;rsquo;m usually holding her with the
+other one.&lt;/p&gt;
+
+&lt;p&gt;So, a quick look reveals that XScreenSaver keeps all screensaver
+binaries in &lt;code&gt;/usr/libexec/xscreensaver&lt;/code&gt;. You can launch them manually
+from a terminal window with, for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;/usr/libexec/xscreensaver/pacman&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But that only launches the screensaver in a window, which covers almost
+half of my screen. I wanted to be able to launch it fullscreen, as
+xscreensaver itself does after some time of inactivity.&lt;/p&gt;
+
+&lt;p&gt;You can get a list of command line options with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;/usr/libexec/xscreensaver/pacman -help&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;but none of them is about launching the window fullscreen.&lt;/p&gt;
+
+&lt;p&gt;The way XScreenSaver does it, is that it creates a
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Root_window&#34;&gt;virtual root window&lt;/a&gt;,
+puts it on top of all other windows and uses it to draw the screensaver.
+That again, seemed to be too involved.&lt;/p&gt;
+
+&lt;p&gt;So, I remembered that
+&lt;a href=&#34;http://tripie.sweb.cz/utils/wmctrl/&#34;&gt;wmctrl&lt;/a&gt;
+exists and it can be used to change the state of any window.&lt;/p&gt;
+
+&lt;p&gt;After launching the screensaver manually and using &lt;code&gt;xwininfo&lt;/code&gt; on it, I
+discovered that its window ID is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pacman: from the XScreenSaver 5.42 distribution (28-Dec-2018)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Apparently, wmctrl can do a partial match on the window ID, so I can use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;wmctrl -r &amp;#34;Pacman: from the XScreenSaver&amp;#34; -b toggle,fullscreen&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;so that it works for all future version of XScreenSaver and make the
+window fullscreen.&lt;/p&gt;
+
+&lt;p&gt;So, putting it all together, I wrote the following bash script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;span style=&#34;color:#0f0;font-weight:bold&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#0f0;font-weight:bold&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#007f7f&#34;&gt;# launch the screensaver in a window and leave it running in the
+&lt;/span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;# background
+&lt;/span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;&lt;/span&gt;/usr/libexec/xscreensaver/pacman &amp;amp;
+&lt;span style=&#34;color:#007f7f&#34;&gt;# wait a bit for the window to come up
+&lt;/span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;&lt;/span&gt;sleep &lt;span style=&#34;color:#ff0;font-weight:bold&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#007f7f&#34;&gt;# make the window fullscreen
+&lt;/span&gt;&lt;span style=&#34;color:#007f7f&#34;&gt;&lt;/span&gt;wmctrl -r &lt;span style=&#34;color:#0ff;font-weight:bold&#34;&gt;&amp;#34;Pacman: from the XScreenSaver&amp;#34;&lt;/span&gt; -b toggle,fullscreen&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;made it executable and added a key binding that launches it by pressing
+the &lt;code&gt;Win-X&lt;/code&gt; key combination.&lt;/p&gt;
+
+&lt;p&gt;And I can now start it fullscreen with a single hand! Of course you can
+use the same technique to launch any other screensaver included in the
+XScreenSaver collection.&lt;/p&gt;
+</description>
     </item>
+    
     
     <item>
       <title>Laptop Problems</title>
@@ -48,9 +156,227 @@ So I needed to find a way to manually launch it fullscreen. I could do it by lau
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://vlahavas.com/posts/20190503-laptop-problems/</guid>
-      <description>My sister has an HP laptop that she bought a few years ago. The exact model is the HP 14-r27n. It wasn&amp;rsquo;t a powerhouse when she bought it and it certainly isn&amp;rsquo;t now, but having installed Salix, in place of the Windows 8 that came with it, and which were almost never booted, it still gets the job done.
-So, she called me a few days ago and told me that something was wrong with it; certain apps wouldn&amp;rsquo;t launch.</description>
+      <description>&lt;p&gt;My sister has an HP laptop that she bought a few years ago. The exact
+model is the HP 14-r27n. It wasn&amp;rsquo;t a powerhouse when she bought it and
+it certainly isn&amp;rsquo;t now, but having installed &lt;a href=&#34;https://salixos.org/&#34;&gt;Salix&lt;/a&gt;,
+in place of the Windows 8 that came with it, and which were almost never
+booted, it still gets the job done.&lt;/p&gt;
+
+&lt;p&gt;So, she called me a few days ago and told me that something was wrong
+with it; certain apps wouldn&amp;rsquo;t launch. I thought it was weird and my
+first reaction was to try reinstalling them, in case she had removed them
+by accident (although I couldn&amp;rsquo;t tell how or why). So, I instructed her
+to launch the &lt;a href=&#34;https://software.jaos.org/#gslapt&#34;&gt;gslapt&lt;/a&gt; package
+manager from the menu. After she entered her password at the sudo prompt,
+she told me that nothing happened. So that was weird too. I told her to
+try again, in case she was entering a wrong password or something, but
+still nothing. I then instructed her to open a terminal window and
+launch gslapt from there. I was thinking that maybe, somehow, she had
+removed some library that gslapt and everything else that wouldn&amp;rsquo;t
+launch needed. To that she responded with:
+&lt;em&gt;&amp;ldquo;It says &amp;lsquo;Input output error&amp;rsquo;&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;That was bad. I knew exactly what that was and I immediately asked her
+if she had any external hard drives. She responded that she did, so I
+told her to take immediate backups of everything she didn&amp;rsquo;t want to
+lose. The spinning hard drive in her laptop, the one that it came with
+when she bought it, was starting to fail.&lt;/p&gt;
+
+&lt;p&gt;Thankfully, she was able to backup everything in her home directory,
+only the OS partition seemed to be affected for now, but I told her
+that she should stop working on that laptop, until we could replace
+the hard drive. She was going to visit in a few days anyway, so
+downtime wouldn&amp;rsquo;t be that long.&lt;/p&gt;
+
+&lt;p&gt;When she arrived a few days later, I ran a few tests using
+&lt;a href=&#34;https://www.smartmontools.org/&#34;&gt;smartmontools&lt;/a&gt;. These proved that
+I had been right in my guess, the hard drive was starting to fail.&lt;/p&gt;
+
+&lt;p&gt;I had an SSD drive that I hadn&amp;rsquo;t ever used lying around, so I though I
+could use that to replace the failing hard drive. It would also make the
+laptop a bit faster.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, the laptop didn&amp;rsquo;t have an easily accessible bay to get to
+the hard drive. I needed to tear it apart completely, remove every
+screw, unplug everything from the motherboard and then be able to access
+the hard drive. It took me a bit, but I got there.&lt;/p&gt;
+
+&lt;p&gt;By opening it up, I noticed that the laptop didn&amp;rsquo;t have an optical drive
+installed (I already knew that), but there was space for one inside. In
+place of the optical drive there was a plastic placeholder. But the
+SATA connectors for an optical drive were there! I then remembered that
+a few years ago I had ordered a 2nd HD caddy from eBay I intended to
+use it on an older laptop of mine, in order to install a second hard
+drive in place of the failing optical drive that it had, but I never got
+to actually doing it. The caddy looks exactly like this one (not my
+picture):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://vlahavas.com/images/hdd-caddy.jpg&#34; alt=&#34;HDD caddy&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, in addition to the SSD drive, I thought I could also add a second
+hard drive for storage. And since I was at it, how about upgrading the
+mere 2GB of RAM that it had?&lt;/p&gt;
+
+&lt;p&gt;The SODIMM slot was nowhere to be seen though. It turns out, that it is
+even more inaccessible than the hard drive. You have to unscrew the
+entire motherboard from the case, remove the wifi card and USB
+interfaces, and flip it around, as the slot is located at the bottom
+side of the motherboard.&lt;/p&gt;
+
+&lt;p&gt;Did you notice the singular there? &amp;ldquo;SODIMM slot&amp;rdquo;. Turns out there&amp;rsquo;s only
+one. So, my initial thought of using a spare 2GB SODIMM module I had
+lying around to double the available RAM disappeared. Oh well&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;I did a quick search online and found out that the laptop supports up to
+8GB of RAM, so I went ahead and ordered a module of that size. That
+would definitely make a huge difference. I also ordered a spinning hard
+drive to install along side the SSD, so there would be plenty of space
+for my sister&amp;rsquo;s files.  The SSD was smaller than the original hard drive
+anyway and couldn&amp;rsquo;t fit all her files.&lt;/p&gt;
+
+&lt;p&gt;A few days later, when my order arrived (it got delayed for a few days
+because it was around the Easter holidays), I replaced the old
+hard drive with the new one, also installed the 2nd hard drive with the
+caddy and replaced the RAM module. I put the laptop back together and
+surprisingly, everything worked!&lt;/p&gt;
+
+&lt;p&gt;I then proceeded to install Salix 14.2, same version as before. Less
+than five minutes later, the installation was complete and I was booting
+into the new system.&lt;/p&gt;
+
+&lt;p&gt;And that was the first time something went wrong. The system booted, but
+only to a blank screen, when it should had been showing the GDM login
+screen. Boot messages were visible before that though. And I quickly
+found out that by switching virtual terminals with Ctrl-Alt-F1 and back
+with Ctl-Alt-F7, GDM would show fine and I could log in.&lt;/p&gt;
+
+&lt;p&gt;OK then. So I performed all available upgrades, which also brought in Linux
+kernel 4.4.172, in place of the 4.4.157 kernel it had with the old hard
+drive. I thought that maybe that would fix the blank screen issue, but
+it didn&amp;rsquo;t.&lt;/p&gt;
+
+&lt;p&gt;That was weird, because apart from the minor update to the kernel,
+everything else was exactly as it was with the old hard drive and
+apparently there weren&amp;rsquo;t any problem there.&lt;/p&gt;
+
+&lt;p&gt;The graphics card, as reported by &lt;code&gt;lspci&lt;/code&gt; is this one:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;00:02.0 VGA compatible controller: Intel Corporation Atom Processor Z36xxx/Z37xxx Series Graphics &amp;amp; Display (rev 0e) (prog-if 00 [VGA controller])
+        Subsystem: Hewlett-Packard Company Atom Processor Z36xxx/Z37xxx Series Graphics &amp;amp; Display
+        Flags: bus master, fast devsel, latency 0, IRQ 92
+        Memory at 90000000 (32-bit, non-prefetchable) [size=4M]
+        Memory at 80000000 (32-bit, prefetchable) [size=256M]
+        I/O ports at 3050 [size=8]
+        Expansion ROM at &amp;lt;unassigned&amp;gt; [disabled]
+        Capabilities: [d0] Power Management version 2
+        Capabilities: [90] MSI: Enable+ Count=1/1 Maskable- 64bit-
+        Capabilities: [b0] Vendor Specific Information: Len=07 &amp;lt;?&amp;gt;
+        Kernel driver in use: i915
+        Kernel modules: i915&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I thought I&amp;rsquo;d try upgrading to the latest Xorg intel drivers, so I
+pulled the code from git, compiled and made a pretty package and
+installed it in place of the stock one. It didn&amp;rsquo;t make a difference.&lt;/p&gt;
+
+&lt;p&gt;I quickly found out that booting into &lt;code&gt;init 3&lt;/code&gt; and then starting the
+graphical environment with &lt;code&gt;startx&lt;/code&gt; always worked though.&lt;/p&gt;
+
+&lt;p&gt;In the mean time, I started moving my sister&amp;rsquo;s settings files from the
+old hard drive to the SSD. A good thing too, because the old hard drive
+decided to finally die shortly after that. After I copied all settings
+files, logging into my sister&amp;rsquo;s account was fine, but logging into my
+(freshly created) account would show a blank screen!&lt;/p&gt;
+
+&lt;p&gt;It turns out that the screen wasn&amp;rsquo;t completely blank. Rather the screen
+brightness for my account for some reason was set to the lowest possible
+setting. Except that it wasn&amp;rsquo;t, it was set to the highest possible
+setting, but for some weird reason brightness controls were completely
+reversed! The brightness buttons on the laptop would work, but the
+&amp;ldquo;Increase brightness&amp;rdquo; button would decrease it and the &amp;ldquo;Decrease
+brightness&amp;rdquo; button would increase it! Except it was even weirded than
+that, because as the setting would decrease to 10%, at 10% decrements,
+brightness would increase, but if I further decreased the setting to
+0%, the screen would turn blank! And that was true for both mine and my
+sister&amp;rsquo;s accounts. And it wasn&amp;rsquo;t just the hardware buttons, the
+behaviour was the same for the software slider in MATE-power-manager.&lt;/p&gt;
+
+&lt;p&gt;I had never seen anything like that before, and after a quick web search
+I came up with nothing useful. I wasn&amp;rsquo;t sure how to deal with this.
+After a while I thought I would look up the available options for the
+kernel module that is used for the graphics card, i915, with
+&lt;code&gt;modinfo -p i915&lt;/code&gt;. So, I got this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;modeset:Use kernel modesetting [KMS] (0=disable, 1=on, -1=force vga console preference [default]) (int)
+panel_ignore_lid:Override lid status (0=autodetect, 1=autodetect disabled [default], -1=force lid closed, -2=force lid open) (int)
+semaphores:Use semaphores for inter-ring sync (default: -1 (use per-chip defaults)) (int)
+enable_rc6:Enable power-saving render C-state 6. Different stages can be selected via bitmask values (0 = disable; 1 = enable rc6; 2 = enable deep rc6; 4 = enable deepest rc6). For example, 3 would enable rc6 and deep rc6, and 7 would enable everything. default: -1 (use per-chip default) (int)
+enable_fbc:Enable frame buffer compression for power savings (default: -1 (use per-chip default)) (int)
+lvds_channel_mode:Specify LVDS channel mode (0=probe BIOS [default], 1=single-channel, 2=dual-channel) (int)
+lvds_use_ssc:Use Spread Spectrum Clock with panels [LVDS/eDP] (default: auto from VBT) (int)
+vbt_sdvo_panel_type:Override/Ignore selection of SDVO panel mode in the VBT (-2=ignore, -1=auto [default], index in VBT BIOS table) (int)
+reset:Attempt GPU resets (default: true) (bool)
+enable_hangcheck:Periodically check GPU activity for detecting hangs. WARNING: Disabling this can cause system wide hangs. (default: true) (bool)
+enable_ppgtt:Override PPGTT usage. (-1=auto [default], 0=disabled, 1=aliasing, 2=full) (int)
+enable_execlists:Override execlists usage. (-1=auto [default], 0=disabled, 1=enabled) (int)
+enable_psr:Enable PSR (default: false) (int)
+preliminary_hw_support:Enable preliminary hardware support. (int)
+disable_power_well:Disable display power wells when possible (-1=auto [default], 0=power wells always on, 1=power wells disabled when possible) (int)
+enable_ips:Enable IPS (default: true) (int)
+fastboot:Try to skip unnecessary mode sets at boot time (default: false) (bool)
+prefault_disable:Disable page prefaulting for pread/pwrite/reloc (default:false). For developers only. (bool)
+load_detect_test:Force-enable the VGA load detect code for testing (default:false). For developers only. (bool)
+invert_brightness:Invert backlight brightness (-1 force normal, 0 machine defaults, 1 force inversion), please report PCI device ID, subsystem vendor and subsystem device ID to dri-devel@lists.freedesktop.org, if your machine needs it. It will then be included in an upcoming module version. (int)
+disable_display:Disable display (default: false) (bool)
+disable_vtd_wa:Disable all VT-d workarounds (default: false) (bool)
+enable_cmd_parser:Enable command parsing (1=enabled [default], 0=disabled) (int)
+use_mmio_flip:use MMIO flips (-1=never, 0=driver discretion [default], 1=always) (int)
+mmio_debug:Enable the MMIO debug code for the first N failures (default: off). This may negatively affect performance. (int)
+verbose_state_checks:Enable verbose logs (ie. WARN_ON()) in case of unexpected hw state conditions. (bool)
+nuclear_pageflip:Force atomic modeset functionality; asynchronous mode is not yet supported. (default: false). (bool)
+edp_vswing:Ignore/Override vswing pre-emph table selection from VBT (0=use value from vbt [default], 1=low power swing(200mV),2=default swing(400mV)) (int)
+enable_guc_submission:Enable GuC submission (default:false) (bool)
+guc_log_level:GuC firmware logging level (-1:disabled (default), 0-3:enabled) (int)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Can you spot it? Here, I&amp;rsquo;ll help you out:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;invert_brightness:Invert backlight brightness (-1 force normal, 0 machine defaults, 1 force inversion), please report PCI device ID, subsystem vendor and subsystem device ID to dri-devel@lists.freedesktop.org, if your machine needs it. It will then be included in an upcoming module version. (int)&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aha! So, that is, in fact, a thing! I then quickly added a file
+&lt;code&gt;/etc/modprobe.d/20-intel.conf&lt;/code&gt; with the following one line of contents:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;options i915 invert_brightness=1&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, I closed the graphical environment with &lt;code&gt;sudo init 3&lt;/code&gt;, unloaded
+the kernel module with &lt;code&gt;sudo modprobe -r i915&lt;/code&gt; and reloaded it with
+&lt;code&gt;sudo modprobe i915&lt;/code&gt;. I restarted Xorg and the brightness controls would
+work as expected. Nice!&lt;/p&gt;
+
+&lt;p&gt;Except that not everything was right. Sometimes, when Xorg would come up,
+fonts on the system menu would look weird. Sometimes, some letters would
+be completely missing. Others would show up somehow distorted.
+Moving the mouse cursor over them would make them appear properly,
+sometimes.&lt;/p&gt;
+
+&lt;p&gt;I remembered that my sister had complained about something like that
+before. She had even sent me a picture of when it happened, because I
+couldn&amp;rsquo;t understand it when she was describing it to me. It would happen
+very seldomly with the old hard drive, maybe once a month or so. And a
+restart would always fix it. But with the new one, the problems appeared
+almost half the times Xorg was started.&lt;/p&gt;
+
+&lt;p&gt;I played around with some other i915 kernel module options, but nothing
+seemed to fix it. I then decided that I could try changing a few Xorg
+options. And after trying out a few, I came to a solution. By adding a
+file &lt;code&gt;/etc/X11/xorg.conf.d/20-intel.conf&lt;/code&gt; with the following contents,
+made everything work with no issues:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;Section &amp;#34;Device&amp;#34;
+  Identifier &amp;#34;Intel Graphics&amp;#34;
+  Driver &amp;#34;intel&amp;#34;
+  Option &amp;#34;AccelMethod&amp;#34; &amp;#34;exa&amp;#34;
+  Option &amp;#34;MigrationHeuristic&amp;#34; &amp;#34;greedy&amp;#34;
+EndSection&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At least I think so&amp;hellip; I did several reboots and restarted Xorg even
+more times and saw no problems. Maybe the problem is completely fixed,
+or it went back to appearing once a month. I prefer the former but
+I can live with the latter. I&amp;rsquo;m still not sure why moving to an SSD
+would make all these problems appear. I gave the laptop to my
+sister, let&amp;rsquo;s see if she has anything to report after she uses it for a
+while. In which case, I&amp;rsquo;ll take another look when she visits again.&lt;/p&gt;
+</description>
     </item>
+    
     
     <item>
       <title>The ABC&#39;s of Unix</title>
@@ -58,13 +384,68 @@ So, she called me a few days ago and told me that something was wrong with it; c
       <pubDate>Thu, 14 Mar 2019 01:35:24 +0200</pubDate>
       
       <guid>https://vlahavas.com/posts/20190314-the_abcs_of_unix/</guid>
-      <description>I have fortune enabled on most of my systems, so whenever I log in, I get a quotation. Today, I got this one. Suffice to say, I found it really funny!
- A is for awk, which runs like a snail, and
-B is for biff, which reads all your mail.
-C is for cc, as hackers recall, while
-D is for dd, the command that does all.
-E is for emacs, which rebinds your keys, and</description>
+      <description>&lt;p&gt;I have &lt;a href=&#34;https://en.wikipedia.org/wiki/Fortune_%28Unix%29&#34;&gt;fortune&lt;/a&gt;
+enabled on most of my systems, so whenever I log in, I get a quotation.
+Today, I got this one. Suffice to say, I found it really funny!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A is for awk, which runs like a snail, and&lt;/p&gt;
+
+&lt;p&gt;B is for biff, which reads all your mail.&lt;/p&gt;
+
+&lt;p&gt;C is for cc, as hackers recall, while&lt;/p&gt;
+
+&lt;p&gt;D is for dd, the command that does all.&lt;/p&gt;
+
+&lt;p&gt;E is for emacs, which rebinds your keys, and&lt;/p&gt;
+
+&lt;p&gt;F is for fsck, which rebuilds your trees.&lt;/p&gt;
+
+&lt;p&gt;G is for grep, a clever detective, while&lt;/p&gt;
+
+&lt;p&gt;H is for halt, which may seem defective.&lt;/p&gt;
+
+&lt;p&gt;I is for indent, which rarely amuses, and&lt;/p&gt;
+
+&lt;p&gt;J is for join, which nobody uses.&lt;/p&gt;
+
+&lt;p&gt;K is for kill, which makes you the boss, while&lt;/p&gt;
+
+&lt;p&gt;L is for lex, which is missing from DOS.&lt;/p&gt;
+
+&lt;p&gt;M is for more, from which less was begot, and&lt;/p&gt;
+
+&lt;p&gt;N is for nice, which it really is not.&lt;/p&gt;
+
+&lt;p&gt;O is for od, which prints out things nice, while&lt;/p&gt;
+
+&lt;p&gt;P is for passwd, which reads in strings twice.&lt;/p&gt;
+
+&lt;p&gt;Q is for quota, a Berkeley-type fable, and&lt;/p&gt;
+
+&lt;p&gt;R is for ranlib, for sorting ar table.&lt;/p&gt;
+
+&lt;p&gt;S is for spell, which attempts to belittle, while&lt;/p&gt;
+
+&lt;p&gt;T is for true, which does very little.&lt;/p&gt;
+
+&lt;p&gt;U is for uniq, which is used after sort, and&lt;/p&gt;
+
+&lt;p&gt;V is for vi, which is hard to abort.&lt;/p&gt;
+
+&lt;p&gt;W is for whoami, which tells you your name, while&lt;/p&gt;
+
+&lt;p&gt;X is, well, X, of dubious fame.&lt;/p&gt;
+
+&lt;p&gt;Y is for yes, which makes an impression, and&lt;/p&gt;
+
+&lt;p&gt;Z is for zcat, which handles compression.&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; &lt;cite&gt;THE ABC&amp;rsquo;S OF UNIX&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
+    
     
     <item>
       <title>Simplified Payment Verification in Bitcoin Presentation</title>
@@ -72,9 +453,17 @@ E is for emacs, which rebinds your keys, and</description>
       <pubDate>Mon, 24 Sep 2018 22:24:42 +0300</pubDate>
       
       <guid>https://vlahavas.com/posts/20180924-bitcoin-spv/</guid>
-      <description>This is a presentation I gave at the Bitcoin and Blockchain Tech Meetup at OK!Thess, in Thessaloniki, Greece, about Simplified Payment Verification in Bitcoin. Slides are in English.
- Slides  </description>
+      <description>&lt;p&gt;This is a presentation I gave at the
+&lt;a href=&#34;https://www.meetup.com/BlockchainGreece-1/?_xtd=gatlbWFpbF9jbGlja9oAJDVkYzIxYjU0LWNkMDQtNDQ5Zi04NTlhLTRmZDA2NmQyMWNiNQ&#34;&gt;Bitcoin and Blockchain Tech Meetup&lt;/a&gt;
+at OK!Thess, in Thessaloniki, Greece, about Simplified Payment
+Verification in Bitcoin. Slides are in English.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../files/bitcoin-spv.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
+    
     
     <item>
       <title>Using Hugo with Github Pages</title>
@@ -82,61 +471,133 @@ E is for emacs, which rebinds your keys, and</description>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://vlahavas.com/posts/20180919-hugo_with_github_pages/</guid>
-      <description>So, I decided to start using Hugo as the platform for my website/blog. I&amp;rsquo;ve looked into different options, including Jekyll and Hexo and in the end, Hugo is the one that made the most sense to me.
-I also wanted to use Github Pages with it, including using a custom domain and using HTTPS by default. Had I chosen Jekyll, integration with Github Pages would have been automatic. However, Github Pages do not directly support any other static website generator.</description>
+      <description>&lt;p&gt;So, I decided to start using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as the platform
+for my website/blog. I&amp;rsquo;ve looked into different options, including
+&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; and &lt;a href=&#34;http://hexo.io/&#34;&gt;Hexo&lt;/a&gt; and in the
+end, Hugo is the one that made the most sense to me.&lt;/p&gt;
+
+&lt;p&gt;I also wanted to use &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt; with it,
+including using a custom domain and using HTTPS by default. Had I chosen
+Jekyll, integration with Github Pages would have been automatic.
+However, Github Pages do not directly support any other static website
+generator. But I wanted to use Hugo.&lt;/p&gt;
+
+&lt;p&gt;And sure enough, there are some instructions to do just that on the &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo
+website&lt;/a&gt;.
+However, I didn&amp;rsquo;t particularly like any of the options. I wanted
+something that would work the same way and equally well for user
+pages, organization pages and project pages. And I wanted to automate
+most of the process, I didn&amp;rsquo;t want to think about &lt;em&gt;how&lt;/em&gt; it works when I
+just want to update my website. I also wanted to easily duplicate the
+setup to other projects.&lt;/p&gt;
+
+&lt;p&gt;Since the only option available in Github Pages that works for user
+pages, organization pages as well as project pages is to publish your
+website directly from the &lt;code&gt;master&lt;/code&gt; branch, that&amp;rsquo;s the option that I had
+to choose. So, the idea is to have the Hugo source files and create the
+content in a &lt;code&gt;source&lt;/code&gt; git branch and then publish the files that are
+generated by Hugo to the &lt;code&gt;master&lt;/code&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;The directory structure for a Hugo project looks something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;site
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+├── public  &amp;lt;---- Generated files go here
+├── static
+└── themes&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hugo puts the generated files inside the &lt;code&gt;public&lt;/code&gt; directory.
+What I wanted to do was to have the entire &lt;code&gt;site&lt;/code&gt; directory mapped to the
+&lt;code&gt;source&lt;/code&gt; git branch, &lt;em&gt;except&lt;/em&gt; the &lt;code&gt;public&lt;/code&gt; directory, which should be mapped
+to the &lt;code&gt;master&lt;/code&gt; branch. Here&amp;rsquo;s how I did it&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;First, create a new repository in your github account.  Don&amp;rsquo;t add a
+&lt;code&gt;README&lt;/code&gt; file or anything else at this step, we&amp;rsquo;ll do that later.&lt;/p&gt;
+
+&lt;p&gt;Then, create a new Hugo site locally with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new site newsite&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Feel free to change the &amp;ldquo;newsite&amp;rdquo; name to anything you want.&lt;/p&gt;
+
+&lt;p&gt;Then, move into that directory you just created, create an empty text
+file with &lt;code&gt;Makefile&lt;/code&gt; as the filename and put the following contents in
+it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;GITREPO = git@github.com:yournick/yourrepo.git
+
+build:
+	rm -rf public
+	mkdir public
+	git worktree prune
+	rm -rf .git/worktrees/public/
+	git worktree add -B master public origin/master
+	rm -rf public/*
+	hugo
+
+publish: build
+	cd public &amp;amp;&amp;amp; \
+	git add --all &amp;amp;&amp;amp; \
+	git commit -m &amp;#34;Publish on `date`&amp;#34; &amp;amp;&amp;amp; \
+	git push -u origin master
+
+serve:
+	hugo serve --watch
+
+init:
+	touch README.md
+	git init
+	git add README.md 
+	git commit -m &amp;#34;first commit&amp;#34;
+	git remote add origin ${GITREPO}
+	git push -u origin master
+	git branch source
+	git checkout source
+	git rm README.md
+	git add ./*
+	echo &amp;#34;public&amp;#34; &amp;gt; .gitignore
+	git add .gitignore
+	git commit -m &amp;#34;Add hugo files&amp;#34;
+	git push -u origin source&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure your edit the &lt;code&gt;GITREPO&lt;/code&gt; variable at the top of the file to
+match the address of the git repo you created on github.&lt;/p&gt;
+
+&lt;p&gt;So, now we&amp;rsquo;ll add the &lt;code&gt;Makefile&lt;/code&gt; and all files that were generated by Hugo.
+Open a terminal in the same directory you just put the &lt;code&gt;Makefile&lt;/code&gt; in and run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;make init&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That does all the work of setting up the repo with the structure that we
+want to have. It also adds an empty &lt;code&gt;README.md&lt;/code&gt; file in the &lt;code&gt;master&lt;/code&gt; branch.
+You can edit that to provide a description for your project.&lt;/p&gt;
+
+&lt;p&gt;Pick a theme from &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes.gohugo.io&lt;/a&gt; and
+set it up. I&amp;rsquo;ll use the
+&lt;a href=&#34;https://themes.gohugo.io/black-and-light/&#34;&gt;Black &amp;amp; Light&lt;/a&gt; theme for this
+example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;git submodule add https://github.com/davidhampgonsalves/hugo-black-and-light-theme.git themes/black-and-light
+cp themes/black-and-light/exampleSite/config.toml ./&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and edit the &lt;code&gt;config.toml&lt;/code&gt; file with your details. You can then create
+some content:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new posts/my-first-post.md&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And that&amp;rsquo;s mostly it&amp;hellip; You&amp;rsquo;ll be working on your content in the
+&lt;code&gt;source&lt;/code&gt; branch and publishing your website to the &lt;code&gt;master&lt;/code&gt; branch.
+Don&amp;rsquo;t forget to go into your project&amp;rsquo;s &lt;strong&gt;Settings&lt;/strong&gt; page in Github and
+then in the &lt;strong&gt;Github Pages&lt;/strong&gt; section, select &lt;strong&gt;master branch&lt;/strong&gt; as the
+source.&lt;/p&gt;
+
+&lt;p&gt;Updating the website with new content should be simple enough. To build the
+project, just run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;make&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and to publish the changes to your site, run&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;make publish&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You may also run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;make serve&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;which is just a shortcut for &lt;code&gt;hugo serve --watch&lt;/code&gt; for testing your
+changes locally.&lt;/p&gt;
+
+&lt;p&gt;In order to clone the repo on another PC, go straight to the &lt;code&gt;source&lt;/code&gt;
+branch and also clone the theme at the same time, you can run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;git clone -b source --recurse-submodules git@github.com:yournick/yourrepo.git&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
-    <item>
-      <title>Example article</title>
-      <link>https://vlahavas.com/blog/example-of-an-article/</link>
-      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/example-of-an-article/</guid>
-      <description>Text This is some text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium at ipsum eu pharetra. Proin ac ante et leo ultrices bibendum. Vivamus id ipsum fermentum, aliquam nunc mollis, tempus sapien. Praesent scelerisque cursus eros vitae pretium. Etiam sit amet ligula in leo euismod malesuada. Proin eleifend pulvinar ipsum, eu lobortis ante pharetra eu. Vivamus sem elit, venenatis eget ornare nec, ullamcorper non tellus. Duis quis massa finibus, euismod erat quis, fermentum nunc.</description>
-    </item>
-    
-    <item>
-      <title>Presentations</title>
-      <link>https://vlahavas.com/presentations/presentations/</link>
-      <pubDate>Wed, 19 Aug 2015 20:29:37 -0700</pubDate>
-      
-      <guid>https://vlahavas.com/presentations/presentations/</guid>
-      <description>This is a list of presentations and talks I&amp;rsquo;ve given in workshops and seminars. Most of the videos are here because somebody else decided it was a good idea to record them! So, thank you!</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://vlahavas.com/blog/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://vlahavas.com/blog/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://vlahavas.com/blog/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/blog/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
     
     <item>
       <title>The Linux Command Line Seminars @ GreekLUG</title>
@@ -144,19 +605,16 @@ Follow the following steps:
       <pubDate>Sun, 27 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://vlahavas.com/posts/20130127-tlcl_greeklug_2012/</guid>
-      <description>This is a series of seminars I presented at GreekLUG, about the use of the Linux Command Line. It&amp;rsquo;s in Greek. Total length is almost 9 hours&amp;hellip;
- Youtube Playlist (in Greek)  </description>
+      <description>&lt;p&gt;This is a series of seminars I presented at
+&lt;a href=&#34;https://www.greeklug.gr&#34;&gt;GreekLUG&lt;/a&gt;, about the use of the Linux Command Line.
+It&amp;rsquo;s in Greek. Total length is almost 9 hours&amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xR9PV9Iif_0&amp;amp;list=PLOJRSHbcLyC4g1Ju4s5p2LlnfPovbkn4x&#34;&gt;Youtube Playlist (in Greek)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
-    <item>
-      <title>The Linux Command Line seminars @ GreekLUG (in Greek)</title>
-      <link>https://vlahavas.com/presentations/tlcl-greeklug-2012/</link>
-      <pubDate>Sun, 27 Jan 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/presentations/tlcl-greeklug-2012/</guid>
-      <description>This is a series of seminars I presented at GreekLUG, about the use of the Linux Command Line.
- Youtube Playlist (in Greek)  </description>
-    </item>
     
     <item>
       <title>Salix Presentation @ GreekLUG</title>
@@ -164,41 +622,19 @@ Follow the following steps:
       <pubDate>Sun, 29 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://vlahavas.com/posts/20120129-salix_greeklug/</guid>
-      <description>This is a presentation of Salix, the GNU/Linux distribution I am developing. The presentation was make in GreekLUG, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy one I must admit.
- Youtube Video (in Greek) Slides  </description>
+      <description>&lt;p&gt;This is a presentation of &lt;a href=&#34;https://www.salixos.org/&#34;&gt;Salix&lt;/a&gt;, the
+GNU/Linux distribution I am developing. The presentation was make in
+&lt;a href=&#34;https://www.greeklug.gr&#34;&gt;GreekLUG&lt;/a&gt;, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy
+one I must admit.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Rm17oNFj-XU&#34;&gt;Youtube Video (in Greek)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../files/salix-greeklug.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
-    <item>
-      <title>Salix presentation @ GreekLUG (in Greek)</title>
-      <link>https://vlahavas.com/presentations/salix-greeklug/</link>
-      <pubDate>Sun, 29 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/presentations/salix-greeklug/</guid>
-      <description>This is a presentation of Salix, the GNU/Linux distribution I am developing. The presentation was make in GreekLUG, Thessaloniki, Greece, so it is in Greek. It&amp;rsquo;s quite a lengthy one I must admit.
- Youtube Video (in Greek) Slides  </description>
-    </item>
-    
-    <item>
-      <title>Home</title>
-      <link>https://vlahavas.com/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/home/</guid>
-      <description>This is the home page. It will display the blog section if there is one, and a text before.
-Hey ! Welcome to the Cocoa Enhanced theme. Here are some articles :</description>
-    </item>
-    
-    <item>
-      <title>License</title>
-      <link>https://vlahavas.com/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/license/</guid>
-      <description>You can use this page to put a license on the contents of your blog, like so:
- The MIT License (MIT)
-Copyright &amp;copy; 2015 Nishanth Shanmughamnishanth.gerrard@gmail.com
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
-    </item>
     
   </channel>
 </rss>
+
