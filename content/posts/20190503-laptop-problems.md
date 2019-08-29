@@ -11,10 +11,10 @@ booted, it still gets the job done.
 
 So, she called me a few days ago and told me that something was wrong
 with it; certain apps wouldn't launch. I thought it was weird and my
-first reaction was to try reinstall them, in case she had removed them
+first reaction was to try reinstalling them, in case she had removed them
 by accident (although I couldn't tell how or why). So, I instructed her
 to launch the [gslapt](https://software.jaos.org/#gslapt) package
-manager from the menu. After she entered he password at the sudo prompt,
+manager from the menu. After she entered her password at the sudo prompt,
 she told me that nothing happened. So that was weird too. I told her to
 try again, in case she was entering a wrong password or something, but
 still nothing. I then instructed her to open a terminal window and
@@ -24,7 +24,7 @@ launch needed. To that she responded with:
 _"It says 'Input output error'"_.
 
 That was bad. I knew exactly what that was and I immediately asked her
-if she had an external hard drives. She responded that she did, so I
+if she had any external hard drives. She responded that she did, so I
 told her to take immediate backups of everything she didn't want to
 lose. The spinning hard drive in her laptop, the one that it came with
 when she bought it, was starting to fail.
@@ -205,7 +205,7 @@ work as expected. Nice!
 
 Except that not everything was right. Sometimes, when Xorg would come up,
 fonts on the system menu would look weird. Sometimes, some letters would
-be completely missing. Others, they would show up somehow distorted.
+be completely missing. Others would show up somehow distorted.
 Moving the mouse cursor over them would make them appear properly,
 sometimes.
 
