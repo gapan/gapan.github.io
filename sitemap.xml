@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vlahavas.com/about/</loc>
+    <lastmod>2019-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vlahavas.com/posts/20190703-program-esp8266-with-arduino-nano/</loc>
     <lastmod>2019-07-03T20:27:57+03:00</lastmod>
   </url>
@@ -30,11 +35,6 @@
   <url>
     <loc>https://vlahavas.com/posts/20180919-hugo_with_github_pages/</loc>
     <lastmod>2018-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vlahavas.com/about/</loc>
-    <lastmod>2018-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -175,7 +175,7 @@
   
   <url>
     <loc>https://vlahavas.com/</loc>
-    <lastmod>2019-07-03T20:27:57+03:00</lastmod>
+    <lastmod>2019-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

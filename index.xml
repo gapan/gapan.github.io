@@ -6,10 +6,20 @@
     <description>Recent content on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jul 2019 20:27:57 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://vlahavas.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://vlahavas.com/about/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vlahavas.com/about/</guid>
+      <description>Hi! I&amp;rsquo;m George Vlahavas. I am a computer scientist, currently working as a researcher in the Department of Informatics, Aristotle University of Thessaloniki. My current research interests are focused on blockchain technologies, but I have also been extensively involved with the areas of Data Science and Statistics, with an application in various subjects such as Phonetics, Aquaculture, Food Science and Nutrition.
+I have taught several classes of Applied Statistics and Biostatistics at university level.</description>
+    </item>
     
     <item>
       <title>How to Program an ESP8266 ESP-01 with an Arduino Nano</title>
@@ -74,16 +84,6 @@ E is for emacs, which rebinds your keys, and</description>
       <guid>https://vlahavas.com/posts/20180919-hugo_with_github_pages/</guid>
       <description>So, I decided to start using Hugo as the platform for my website/blog. I&amp;rsquo;ve looked into different options, including Jekyll and Hexo and in the end, Hugo is the one that made the most sense to me.
 I also wanted to use Github Pages with it, including using a custom domain and using HTTPS by default. Had I chosen Jekyll, integration with Github Pages would have been automatic. However, Github Pages do not directly support any other static website generator.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://vlahavas.com/about/</link>
-      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://vlahavas.com/about/</guid>
-      <description>Hi! I&amp;rsquo;m George Vlahavas. I am a computer scientist, currently working as a researcher in the Department of Informatics, Aristotle University of Thessaloniki. My current research interests are focused on blockchain technologies, but I have also been extensively involved with the areas of Data Science and Statistics, with an application in various areas such as Phonetics, Aquaculture, Food Science and Nutrition.
-I have taught several classes of Applied Statistics and Biostatistics at university level.</description>
     </item>
     
     <item>
