@@ -43,7 +43,7 @@ disqusShortname = "" # Enable or disable Disqus.
     name = "Email"
     icon = "fa fa-envelope fa-2x"
     weight = 2
-    url = "mailto:george@vlahavas.com"
+    url = "mailto:vlahavas@gmail.com"
 [[params.social]]
     name = "RSS"
     icon = "fa fa-rss-square fa-2x"
