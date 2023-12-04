@@ -6,10 +6,20 @@
     <description>Recent content in Posts on { George_Vlahavas }</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jul 2019 20:27:57 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jan 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://vlahavas.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How Bitcoin Works Presentation @ GreekLUG</title>
+      <link>https://vlahavas.com/posts/20231204-how-bitcoin-works-presentation/</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://vlahavas.com/posts/20231204-how-bitcoin-works-presentation/</guid>
+      <description>This is a high level presentation of &amp;ldquo;How Bitcoin Works&amp;rdquo; I made a few weeks ago in GreekLUG, Thessaloniki, Greece. The presentation is in Greek, slides are in English.
+ Youtube Video (in Greek) Slides  </description>
+    </item>
     
     <item>
       <title>How to Program an ESP8266 ESP-01 with an Arduino Nano</title>
