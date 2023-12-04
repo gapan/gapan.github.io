@@ -7,7 +7,7 @@ build:
 	rm -rf .git/worktrees/public/
 	git worktree add -B master public origin/master
 	rm -rf public/*
-	hugo
+	hugo-0.49.2
 
 publish: build
 	cd public && \
@@ -16,7 +16,7 @@ publish: build
 	git push -u origin master
 
 serve:
-	hugo serve --watch
+	hugo-0.49.2 serve --watch
 
 init:
 	touch README.md
