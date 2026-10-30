@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vlahavas.com/posts/20231204-how-bitcoin-works-presentation/</loc>
-    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vlahavas.com/about/</loc>
     <lastmod>2019-08-29T00:00:00+00:00</lastmod>
   </url>
@@ -59,8 +54,12 @@
   
   <url>
     <loc>https://vlahavas.com/posts/</loc>
-    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-03T20:27:57+03:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vlahavas.com/publications/</loc>
   </url>
   
   <url>
@@ -70,7 +69,7 @@
   
   <url>
     <loc>https://vlahavas.com/</loc>
-    <lastmod>2023-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
