@@ -44,18 +44,22 @@ disqusShortname = "" # Enable or disable Disqus.
     icon = "fa fa-envelope fa-2x"
     weight = 2
     url = "mailto:vlahavas@gmail.com"
-[[params.social]]
-    name = "RSS"
-    icon = "fa fa-rss-square fa-2x"
-    weight = 3
-    url = "index.xml"
+#[[params.social]]
+#    name = "RSS"
+#    icon = "fa fa-rss-square fa-2x"
+#    weight = 3
+#    url = "index.xml"
 
 # Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
+#[[menu.main]]
+#    name = "Blog"
+#    weight = 1
+#    url  = "/posts/"
+#[[menu.main]]
+#    name = "Publications"
+#    weight = 2
+#    url = "/publications/"
+#[[menu.main]]
+#    name = "About"
+#    weight = 3
+#    url = "/about/"
